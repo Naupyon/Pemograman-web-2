@@ -1,0 +1,88 @@
+/* Menggunakan variabel dari HomeStyle.css */
+.table-wrapper {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-soft);
+    margin-top: 30px;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.table-header h2 {
+    font-size: 22px;
+    color: var(--text-dark);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    font-weight: 600;
+    color: var(--text-muted);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background-color: #F8FAFD;
+}
+
+td {
+    color: var(--text-dark);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+tbody tr {
+    transition: all 0.2s ease-in-out;
+}
+
+tbody tr:hover {
+    background-color: #F4F8FF;
+}
+
+/* Tombol Aksi dalam Tabel */
+.btn-sm {
+    padding: 8px 16px;
+    font-size: 13px;
+    border-radius: 6px;
+    box-shadow: none;
+    font-weight: 500;
+}
+
+.btn-warning {
+    background: #FFF;
+    color: #F59E0B;
+    border: 1px solid #F59E0B;
+}
+
+.btn-warning:hover {
+    background: #F59E0B;
+    color: var(--white);
+    transform: none;
+}
+
+.btn-danger {
+    background: #FFF;
+    color: #EF4444;
+    border: 1px solid #EF4444;
+    margin-left: 8px;
+}
+
+.btn-danger:hover {
+    background: #EF4444;
+    color: var(--white);
+    transform: none;
+}

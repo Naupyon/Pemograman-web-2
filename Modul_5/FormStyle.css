@@ -1,0 +1,95 @@
+/* FormStyle.css - Gaya terpadu untuk Form Member, Buku, dan Peminjaman */
+
+.form-wrapper {
+    background: var(--white, #FFFFFF);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-soft, 0 10px 30px rgba(92, 141, 246, 0.15));
+    max-width: 550px;
+    margin: 40px auto;
+    border: 1px solid var(--border-color, #E2E8F0);
+}
+
+.form-wrapper h2 {
+    margin-bottom: 30px;
+    color: var(--text-dark, #1A2639);
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-dark, #1A2639);
+    font-size: 14px;
+}
+
+/* Mengatur seragam semua tipe input, textarea, dan dropdown (select) */
+.form-group input, 
+.form-group textarea, 
+.form-group select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1.5px solid var(--border-color, #E2E8F0);
+    border-radius: 8px;
+    font-size: 14px;
+    color: var(--text-dark, #1A2639);
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #FAFAFA;
+    font-family: inherit; /* Mewarisi font Poppins */
+}
+
+/* Efek menyala (glowing) biru lembut saat kolom diisi */
+.form-group input:focus, 
+.form-group textarea:focus, 
+.form-group select:focus {
+    border-color: var(--primary-blue, #5C8DF6);
+    background-color: var(--white, #FFFFFF);
+    box-shadow: 0 0 0 4px rgba(92, 141, 246, 0.15);
+}
+
+/* Khusus Textarea Alamat agar tidak merusak layout jika ditarik */
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* --- TOMBOL AKSI DALAM FORM --- */
+.form-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+/* Membuat tombol Simpan dan Batal memiliki lebar yang sama (50:50) */
+.form-actions .btn {
+    flex: 1; 
+    text-align: center;
+    padding: 12px 0;
+    font-size: 15px;
+}
+
+/* Gaya khusus untuk tombol Batal agar tidak terlalu mencolok */
+.btn-cancel {
+    background: var(--white, #FFFFFF);
+    color: var(--text-dark, #1A2639);
+    border: 1px solid var(--border-color, #E2E8F0);
+    box-shadow: none;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-cancel:hover {
+    background: #F1F5F9;
+    transform: translateY(-2px);
+}
