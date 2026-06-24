@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    /* Palet warna dari gambar */
     --primary-blue: #5C8DF6;
     --primary-hover: #4873D1;
     --text-dark: #1A2639;
@@ -30,7 +29,6 @@ body {
     padding: 0 20px;
 }
 
-/* --- NAVBAR STYLING --- */
 nav {
     display: flex;
     justify-content: space-between;
@@ -65,7 +63,6 @@ nav {
     border-bottom: 2px solid var(--primary-blue);
 }
 
-/* --- HERO SECTION (index.php) --- */
 .hero {
     display: flex;
     align-items: center;
@@ -89,7 +86,6 @@ nav {
     position: relative;
 }
 
-/* Garis bawah biru muda di bawah teks seperti di gambar */
 .hero h1 span::after {
     content: '';
     position: absolute;
@@ -108,7 +104,6 @@ nav {
     margin-bottom: 40px;
 }
 
-/* --- BUTTONS --- */
 .btn {
     display: inline-block;
     padding: 12px 32px;

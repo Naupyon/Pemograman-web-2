@@ -1,5 +1,3 @@
-/* FormStyle.css - Gaya terpadu untuk Form Member, Buku, dan Peminjaman */
-
 .form-wrapper {
     background: var(--white, #FFFFFF);
     padding: 40px;
@@ -30,7 +28,6 @@
     font-size: 14px;
 }
 
-/* Mengatur seragam semua tipe input, textarea, dan dropdown (select) */
 .form-group input, 
 .form-group textarea, 
 .form-group select {
@@ -55,20 +52,17 @@
     box-shadow: 0 0 0 4px rgba(92, 141, 246, 0.15);
 }
 
-/* Khusus Textarea Alamat agar tidak merusak layout jika ditarik */
 .form-group textarea {
     resize: vertical;
     min-height: 100px;
 }
 
-/* --- TOMBOL AKSI DALAM FORM --- */
 .form-actions {
     display: flex;
     gap: 15px;
     margin-top: 35px;
 }
 
-/* Membuat tombol Simpan dan Batal memiliki lebar yang sama (50:50) */
 .form-actions .btn {
     flex: 1; 
     text-align: center;
@@ -76,7 +70,6 @@
     font-size: 15px;
 }
 
-/* Gaya khusus untuk tombol Batal agar tidak terlalu mencolok */
 .btn-cancel {
     background: var(--white, #FFFFFF);
     color: var(--text-dark, #1A2639);
