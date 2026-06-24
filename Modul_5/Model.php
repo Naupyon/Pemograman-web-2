@@ -26,9 +26,9 @@ function getAllPeminjaman() {
     global $koneksi;
     try {
         $query = "SELECT peminjaman.*, member.nama_member, buku.judul_buku 
-                  FROM peminjaman
-                  INNER JOIN member ON peminjaman.id_member = member.id_member
-                  INNER JOIN buku ON peminjaman.id_buku = buku.id_buku";
+                FROM peminjaman
+                INNER JOIN member ON peminjaman.id_member = member.id_member
+                INNER JOIN buku ON peminjaman.id_buku = buku.id_buku";
         $stmt = $koneksi->query($query);
         return $stmt->fetchAll();
     } catch (PDOException $e) {
